@@ -1,6 +1,6 @@
 {
   "name": "rjr/curl",
-  "description": "CURL class for PHP",
+  "description": "RuanJiaran-CURL class for PHP",
   "keywords": ["rjr-curl", "curl"],
   "homepage": "https://github.com/RuanJiaran/curl",
   "type": "library",
