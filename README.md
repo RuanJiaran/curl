@@ -9,31 +9,31 @@ If you have questions or problems with installation or usage [create an Issue](h
 In order to install this library via composer run the following command in the console:
 
 ```sh
-composer require curl/curl
+composer require rjr/curl
 ```
 
 or add the package manually to your composer.json file in the require section:
 
 ```json
-"curl/curl": "^1.5"
+"rjr/curl": "^1.5"
 ```
 
 ## Usage examples
 
 ```php
-$curl = new Curl\Curl();
+$curl = new Rjr\Curl();
 $curl->get('http://www.example.com/');
 ```
 
 ```php
-$curl = new Curl\Curl();
+$curl = new Rjr\Curl();
 $curl->get('http://www.example.com/search', array(
     'q' => 'keyword',
 ));
 ```
 
 ```php
-$curl = new Curl\Curl();
+$curl = new Rjr\Curl();
 $curl->post('http://www.example.com/login/', array(
     'username' => 'myusername',
     'password' => 'mypassword',
@@ -41,7 +41,7 @@ $curl->post('http://www.example.com/login/', array(
 ```
 
 ```php
-$curl = new Curl\Curl();
+$curl = new Rjr\Curl();
 $curl->setBasicAuthentication('username', 'password');
 $curl->setUserAgent('');
 $curl->setReferrer('');
@@ -61,14 +61,14 @@ var_dump($curl->response_headers);
 ```
 
 ```php
-$curl = new Curl\Curl();
+$curl = new Rjr\Curl();
 $curl->setOpt(CURLOPT_RETURNTRANSFER, TRUE);
 $curl->setOpt(CURLOPT_SSL_VERIFYPEER, FALSE);
 $curl->get('https://encrypted.example.com/');
 ```
 
 ```php
-$curl = new Curl\Curl();
+$curl = new Rjr\Curl();
 $curl->put('http://api.example.com/user/', array(
     'first_name' => 'Zach',
     'last_name' => 'Borboa',
@@ -76,14 +76,14 @@ $curl->put('http://api.example.com/user/', array(
 ```
 
 ```php
-$curl = new Curl\Curl();
+$curl = new Rjr\Curl();
 $curl->patch('http://api.example.com/profile/', array(
     'image' => '@path/to/file.jpg',
 ));
 ```
 
 ```php
-$curl = new Curl\Curl();
+$curl = new Rjr\Curl();
 $curl->delete('http://api.example.com/user/', array(
     'id' => '1234',
 ));
@@ -101,7 +101,7 @@ curl_close($curl->curl);
 
 ```php
 // Example of downloading a file or any other content
-$curl = new Curl\Curl();
+$curl = new Rjr\Curl();
 // open the file where the request response should be written
 $file_handle = fopen($target_file, 'w+');
 // pass it to the curl resource
