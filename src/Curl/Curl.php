@@ -1,6 +1,6 @@
 <?php
 
-namespace Curl;
+namespace Rjr;
 
 /**
  * An object-oriented wrapper of the PHP cURL extension.
